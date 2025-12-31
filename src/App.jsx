@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 
-const CLIENT_KEY = "aw7i27h8qolylqj7"; 
-const REDIRECT_URI = "https://login-tiktok.vercel.app/auth/callback"; 
+const CLIENT_KEY = import.meta.env.VITE_TIKTOK_CLIENT_KEY; 
+const REDIRECT_URI = import.meta.env.VITE_TIKTOK_REDIRECT_URI; 
 
 // 1. Component Button Login
 const LoginButton = () => {
