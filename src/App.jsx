@@ -13,7 +13,7 @@ const LoginButton = () => {
     // Tạo URL xác thực TikTok
     let url = 'https://www.tiktok.com/v2/auth/authorize/';
     url += `?client_key=${CLIENT_KEY}`;
-    url += `&scope=user.info.basic`;
+    url += `&scope=user.info.profile`;
     url += `&response_type=code`;
     url += `&redirect_uri=${REDIRECT_URI}`;
     url += `&state=${csrfState}`;
