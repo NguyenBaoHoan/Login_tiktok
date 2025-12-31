@@ -66,12 +66,10 @@ const TikTokCallback = () => {
 // 3. Main App Routing
 function App() {
   return (
-    <BrowserRouter>
       <Routes>
         <Route path="/" element={<LoginButton />} />
         <Route path="/auth/callback" element={<TikTokCallback />} />
       </Routes>
-    </BrowserRouter>
   );
 }
 
